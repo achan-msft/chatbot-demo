@@ -1,25 +1,25 @@
-# Goal 
-This is to show the skeleton of the chatbot.
+# Overview 
+This project serves as the basic skeleton of a chatbot.
 
+## Prerequisites
+-   [Azure OpenAI Model](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions)   
+-   [Visual Code](https://code.visualstudio.com/)
+-   Python version >= 3.9 
 
-Setup 
-To run the application 
-1.  Download the python with version >= 3.9 
-2.  Set up the virtual environment
-python -m venv <your-virtual-environment-name>
-3.  Install the prerequisites 
-pip install -r requirements.txt 
+## Setup 
+Follow the steps  
+1.  Set up the virtual environment  
+```python -m venv <your-virtual-environment-name> ```  
 
-4.  Run the following command 
-python abc 
+2.  Install the prerequisites  
+```pip install -r requirements.txt```  
 
+3.  Run the following command  
+```streamlit run main.py```  
 
-Configuration  
-Populate the file .env for Azure resources.  
-
-For info pertaining to Azure OpenAI, you may get it from AI Foundry Studio. 
-AZURE_OPENAI_ENDPOINT= 
-AZURE_OPENAI_API_KEY=
-# for api version, grab it from the endpoint. it's NOT from the LHS. 
-AZURE_OPENAI_API_VERSION= 
-AZURE_OPENAI_DEPLOYMENT_NAME= 
+## Configuration  
+Populate the following in the file .env for Azure resources.  You may get them from AI Foundry Studio.  
+- AZURE_OPENAI_ENDPOINT   
+- AZURE_OPENAI_API_KEY  
+- AZURE_OPENAI_API_VERSION   
+- AZURE_OPENAI_DEPLOYMENT_NAME   

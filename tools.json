@@ -15,5 +15,12 @@
                 "required": ["location"]
             }
         }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "function_calling_test",
+            "description": "test the function calling"            
+        }
     }
 ]

@@ -65,14 +65,21 @@ class Converse():
             time_response = DateTimeUtility.get_current_time(
                 location=function_args.get("location")
             )
-            response ={
+            return {
                 "tool_call_id": tool_call.id,
                 "role": "tool",
                 "name": tool_call.function.name,
                 "content": time_response,
             }
-            return response
 
+        elif tool_call.function.name == "function_calling_test":
+            return {
+                "tool_call_id": tool_call.id,
+                "role": "tool",
+                "name": tool_call.function.name,
+                "content": "you just invoked a test function",
+            }
+        
     def get_tools_content(self):
         try: 
             with open(self.TOOLS_FILE_NAME, 'r') as f:
